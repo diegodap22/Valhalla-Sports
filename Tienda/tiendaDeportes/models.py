@@ -13,5 +13,5 @@ class Meta:
     verbose_name='Producto'
     verbose_name_plural='Productos'
 
-def _stf_(self):
+def __str__(self):
     return self.Nombre
