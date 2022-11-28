@@ -9,15 +9,15 @@ def agregar_producto(request, producto_id):
     return redirect("Index")
 
 def restar_producto(request, producto_id):
-    Carrito=carrito(request)
-    producto=Producto.objects.get(id=producto_id)
-    Carrito.restar(producto)
-    return redirect("Index")
+     Carrito=carrito(request)
+     producto=Producto.objects.get(id=producto_id)
+     Carrito.restar(producto)
+     return redirect("Index")
 
 def limpiar_carrito(request):
-    Carrito=carrito(request)
-    Carrito.limpiarCarrito()
-    return redirect("Index")
+     Carrito=carrito(request)
+     Carrito.limpiarCarrito()
+     return redirect("Index")
 
-def carrito(request):
-    return render (request, "carrito.html")
+def carrini(request):
+    return render(request,"carrito.html")
